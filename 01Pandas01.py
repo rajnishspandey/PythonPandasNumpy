@@ -1,4 +1,6 @@
-"""A Series is a one-dimensional labeled array in Pandas. It can be thought of as a single column of data with labels or indices for each element. You can create a Series from various data sources, such as lists, NumPy arrays, or dictionaries"""
+"""A Series is a one-dimensional labeled array in Pandas. 
+It can be thought of as a single column of data with labels or indices for each element. 
+You can create a Series from various data sources, such as lists, NumPy arrays, or dictionaries"""
 import pandas as pd
 
 Data = [10, 20, 30, 40, 50]
