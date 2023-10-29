@@ -60,7 +60,10 @@ print("after Drop :\n")
 df.drop("City",axis=1,inplace=True) #drops the column
 print(df)
 
-print("rename :\n",)
+print("rename :\n")
+print("before rename \n",df)
+df.columns = ["Name","Ages"]
+print("After renameing \n")
 """
 shape: Returns the dimensions (number of rows and columns) of the DataFrame.
 info(): Provides a summary of the DataFrame, including data types and non-null counts.
