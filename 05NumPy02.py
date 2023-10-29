@@ -97,5 +97,6 @@ print("min")
 min = arr.min()
 print(min)    
 
+print("how many dimension of array it is :",arr.ndim)
 
 
