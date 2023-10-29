@@ -67,6 +67,11 @@ print(a)
 
 print("# Access the column using the name\n")
 print(df.loc[0:2,["Course","Country"]])
+print("###############################\n")
+print(df.loc[1,"Country"])
+print(df.loc[1:2,"Course"])
+print(df.iloc[1:3,3])
+print("###############################\n")
 """
 Let us create a new dataframe called 'df1' and assign 'df' to it. 
 Now, let us set the "Name" column as an index column using the method set_index().
