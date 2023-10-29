@@ -16,8 +16,8 @@ print("#retrieve the columns ID\n")
 print(df["ID"])
 
 print("find the type of the column\n")
-x = df[["ID"]]
-print(type(x))
+y = df[["ID"]]
+print(type(y))
 
 print("#accessing multiple columns\n")
 col = df[["ID","Department","Salary"]]
@@ -45,5 +45,36 @@ c = df[["Country","Course"]]
 print(c)
 
 print("To view the column as a series, just use one bracket\n")
-x = df["Name"]
-print(x)
+z = df["Country"]
+print(z)
+print(type(z))
+
+"""
+loc() is a label-based data selecting method which means that we have to pass the name of the row or column that we want to select. 
+This method includes the last element of the range passed in it.
+
+iloc() is an indexed-based selecting method which means that we have to pass integer index in the method to select a specific row/column. 
+This method does not include the last element of the range passed in it.
+"""
+
+print("# Access the value on the first row and the first column\n")
+a = df.iloc[0,0]
+print(a)
+
+print("# Access the value on the first row and the third column\n")
+a = df.iloc[0,2]
+print(a)
+
+print("# Access the column using the name\n")
+print(df.loc[0:2,["Course","Country"]])
+"""
+Let us create a new dataframe called 'df1' and assign 'df' to it. 
+Now, let us set the "Name" column as an index column using the method set_index().
+"""
+print("####################\n")
+df1 = pd.DataFrame(x)
+print(df1)
+
+print("set ID column as index\n")
+df1 = df1.set_index("ID")
+print(df1)
